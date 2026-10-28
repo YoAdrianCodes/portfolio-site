@@ -4,10 +4,11 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Resume</title>
+        <link rel="stylesheet" href="../src/style.css" />
     </head>
     <body>
         <header>
-        <nav>
+        <nav class="navbar">
             <a href="../index.html">Home</a>
             <a href="../resume/">Resume</a>
             <a href="../coverletter/">Cover Letter</a>
@@ -17,9 +18,91 @@
         <main>
         <section>
             <h1>Resume</h1>
-            <p>My career goals are to become a proficient software engineer with expertise in web and mobile application development. I aim to work on innovative projects that challenge me to learn new technologies and improve my problem-solving skills. Additionally, I aspire to contribute to open-source projects and collaborate with other developers in the tech community.</p>
+            <div id="resume-date"></div>
+            
+            <h3>Relevant Skills</h3>
+            <ul>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ul>
+            <h3>Experience</h3>
+            <div>
+                <div class="experience-header">
+                    <p><strong>ABC Corporation</strong>, Seattle, WA</p>
+                    <p>2023 - 2025</p>
+                </div>
+                <ul>
+                    <li>Worked on various projects involving web development.</li>
+                    <li>Collaborated with cross-functional teams to deliver high-quality software.</li>
+                </ul>
+            </div>
+            <div>
+                <div class="experience-header">
+                    <p><strong>ABC Corporation</strong>, Seattle, WA</p>
+                    <p>2020 - 2023</p>
+                </div>
+                <ul>
+                    <li>Worked on various projects involving web development.</li>
+                    <li>Collaborated with cross-functional teams to deliver high-quality software.</li>
+                </ul>
+            </div>
+            <h3>Projects</h3>
+            <a href="https://github.com/YoAdrianCodes">Software Projects</a>
+            <p>Tools: JavaScript, Python, React, Node.js</p>
+            <ul>
+                <li>Developed a personal portfolio website using React and Node.js.</li>
+                <li>Created a task management application with JavaScript and Python backend.</li>
+            </ul>
+            <h3>Certifications</h3>
+            <table>
+                <caption>Professional certifications</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Certification</th>
+                        <th scope="col">Issuing organization</th>
+                        <th scope="col">Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AWS Certified Solutions Architect</td>
+                        <td>AWS</td>
+                        <td>2026</td>
+                    </tr>
+                    <tr>
+                        <td>AWS Certified Solutions Architect</td>
+                        <td>AWS</td>
+                        <td>2026</td>
+                    </tr>
+                     <tr>
+                        <td>AWS Certified Solutions Architect</td>
+                        <td>AWS</td>
+                        <td>2026</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Education</h3>
+                <p><strong>Western Governors University</strong>, Millcreek, UT</p>
+                <div class="experience-header">
+                    <p>Bachelor of Science in Computer Science</p>   
+                    <p>2026 - 2027</p>
+                </div>
+            <h3>Volunteer</h3>
+            <p><strong>Data Engineer Things</strong>, Seattle Chapter</p>
+            <ul>
+                <li>Assisted in organizing local data engineering meetups and events.</li>
+                <li>Collaborated with other volunteers to provide mentorship and support to new members.</li>
+            </ul>
         </section>
         </main>
+        <script>
+            const resumeDate = document.getElementById("resume-date");
+            const currentDate = new Date().toLocaleDateString();
+            resumeDate.textContent = `Date viewed: ${currentDate}`;
+            console.log(`Resume page loaded. Date viewed: ${currentDate}`);
+        </script>
     </body>
     <footer>
         <p>Made with ☕️</p>

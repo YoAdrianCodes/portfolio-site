@@ -4,10 +4,11 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Goals</title>
+        <link rel="stylesheet" href="../src/style.css" />
     </head>
     <body>
         <header>
-        <nav>
+        <nav class="navbar">
             <a href="../index.html">Home</a>
             <a href="../resume/">Resume</a>
             <a href="../coverletter/">Cover Letter</a>
@@ -15,14 +16,124 @@
         </nav>
         </header>
         <main>
-        <section>
             <h1>Career Goals</h1>
-            <p>My career goals are to become a proficient software engineer with expertise in web and mobile application development. I aim to work on innovative projects that challenge me to learn new technologies and improve my problem-solving skills. Additionally, I aspire to contribute to open-source projects and collaborate with other developers in the tech community.</p>
-        </section>
+            <section aria-labelledby="short-term-goals">
+                <h2 id="short-term-goals">Near-Term Goals</h2>
+                <p>
+                    As I complete my computer science degree at Western Governors
+                    University, I plan to strengthen my software engineering
+                    foundations with a focus on data. 
+                </p>
+                <ul>
+                    <li>Build and document projects that demonstrate my technical skills.</li>
+                    <li>Improve my understanding of data modeling and design.</li>
+                    <li>Join communities and groups focused on data engineering.</li>
+                </ul>
+                <figure>
+                    <img 
+                        src="../src/assets/DET_AWS_meetup.jpg" 
+                        alt="Data Engineer Things Meetup at AWS" 
+                        style="width: 100%; max-width: 600px; height: auto; object-fit: initial; border: 0; border-radius: 0; box-shadow: none; margin-left: 0;"
+                    />
+                    <figcaption>Data Engineer Things (DET) Meetup Guest Speakers and Organizers at AWS</figcaption>
+                </figure>
+            </section>
+            <section aria-labelledby="long-term-goals">
+                <h2 id="long-term-goals">Long-Term Goals</h2>
+                <p>
+                    My long-term goal is to grow into a software engineer who can
+                    design and deliver reliable web and mobile applications. I want
+                    to take on increasingly challenging projects, learn from
+                    experienced teammates, and contribute to products that solve
+                    meaningful problems for their users.
+                </p>
+            </section>
+            <section aria-labelledby="approach">
+                <h2 id="approach">How I Plan to Grow</h2>
+                <p>
+                    I will work toward these goals through continued study,
+                    hands-on practice, thoughtful feedback, and collaboration. I
+                    also plan to keep learning new technologies while building on
+                    the software engineering experience I already have.
+                </p>
+            </section>
+            <section aria-labelledby="recent-activities">
+                <h2 id="recent-activities">Data Engineering in Action</h2>
+                <figure>
+                    <audio muted controls>
+                        <source src="../src/assets/ElevatorPitch.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <figcaption>Elevator Pitch by Me</figcaption>
+                </figure>
+                <figure>
+                    <video muted controls>
+                        <source src="../src/assets/data_engineering_short.mov" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <figcaption>Data Engineer Guide in 2026 By @DataWithBaraa</figcaption>
+                </figure>
+            </section>
+            <section aria-labelledby="contact-heading">
+                <h2 id="contact-heading">Contact Me</h2>
+                <form id="contact-form">
+                    <p>
+                        <label for="first-name">First name</label>
+                        <input type="text" id="first-name" name="firstName" required />
+                    </p>
+                    <p>
+                        <label for="last-name">Last name</label>
+                        <input type="text" id="last-name" name="lastName" required />
+                    </p>
+                    <p>
+                        <label for="company-name">Company name</label>
+                        <input type="text" id="company-name" name="companyName" required />
+                    </p>
+                    <p>
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" required />
+                    </p>
+                    <p>
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone" required />
+                    </p>
+                    <p>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </p>
+                    <fieldset>
+                        <legend>Best contact time</legend>
+                        <label>
+                            <input type="radio" name="bestContactTime" value="am" required />
+                            a.m.
+                        </label>
+                        <label>
+                            <input type="radio" name="bestContactTime" value="pm" />
+                            p.m.
+                        </label>
+                        <label>
+                            <input type="radio" name="bestContactTime" value="anytime" />
+                            anytime
+                        </label>
+                    </fieldset>
+                    <p>
+                        <label for="contact-method">Preferred contact method</label>
+                        <select id="contact-method" name="contactMethod" required>
+                            <option value="" selected disabled>Select a contact method</option>
+                            <option value="phone">phone</option>
+                            <option value="email">email</option>
+                            <option value="text">text</option>
+                        </select>
+                    </p>
+                    <button type="submit">Submit</button>
+                </form>
+                <p id="form-status" role="status" aria-live="polite" hidden></p>
+            </section>
         </main>
+        <script type="module" src="../src/main.js"></script>
+        <footer>
+            <p>Made with ☕️</p>
+            <a href="mailto:agonz897@wgu.edu">Email</a>
+        </footer>
     </body>
-    <footer>
-        <p>Made with ☕️</p>
-        <a href="mailto:agonz897@wgu.edu">Email</a>
-    </footer>
 </html>

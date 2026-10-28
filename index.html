@@ -4,26 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adrian's Portfolio Site</title>
-    <link rel="stylesheet" href="./src/styles.css" />
+    <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
-    <div id="app"></div>
     <header>
-      <nav>
+      <nav class="navbar">
         <a href="./index.html">Home</a>
         <a href="./resume/">Resume</a>
         <a href="./coverletter/">Cover Letter</a>
         <a href="./careergoals/">Career Goals</a>
       </nav>
     </header>
-    <main>
+    <main class="main-layout">
       <section>
         <h1>Welcome to My Portfolio</h1>
-        <img src="./src/assets/profile_pic.jpeg" alt="Adrian's Profile Picture" width="200" height="200"/>
-        <h3>Adrian Gonzalez Cortes</h3>
-        <p>Greater Seattle Area</p>
-        <h3>About</h3>
-        <p>Hello, my name is Adrian 👋 I am a computer science student at Western Governors University. I previously worked as a software engineer with experiences in both web and iOS development. I am passionate about creating innovative data solutions and continuously improving my skills in the field of software development.</p>
+        <div id="intro">
+          <img src="./src/assets/profile_pic.jpeg" alt="Adrian's Profile Picture"/>
+          <h3>Adrian Gonzalez Cortes</h3>
+          <p>Greater Seattle Area</p>
+        </div>
+        <div id="about">
+          <h3>About</h3>
+          <p>Hello, my name is Adrian 👋 I am a computer science student at Western Governors University. I previously worked as a software engineer with experiences in both web and iOS development. I am passionate about creating innovative data solutions and continuously improving my skills in the field of software development.</p>
+        </div>
       </section>
       <section id="socials">
         <h2>Connect with Me</h2>
@@ -36,4 +39,7 @@
     </main>
     <script type="module" src="/src/main.js"></script>
   </body>
+  <footer>
+    <p>Made with ☕️</p>
+  </footer>
 </html>
